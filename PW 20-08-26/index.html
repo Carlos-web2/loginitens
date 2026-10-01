@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE PREÇOS 20-08-2026</title>
+    <script src="script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #13293D;
+            display: flex;
+            height: 100vh; 
+            justify-content: center;
+            align-items: center;
+        } 
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1B98E0; 
+            padding: 2.5%;
+            border-radius: 40px; 
+            max-width: 30%; 
+            border-bottom: #006494 5px solid;
+            border-right: #006494 5px solid;
+        }
+        form label{
+            font-weight: bold;
+            color: white;
+            margin-right: 0;
+        }
+        form input{
+            border-radius: 40px; 
+            border: none; 
+            padding: 0.5%; 
+            margin-right: 10%;
+            margin-top: 2.5%;
+            
+        } 
+
+        form h1{
+            color: white; 
+            margin-bottom: 5%;
+        }
+
+        form h2{
+            margin-top: 10%;
+            color: white;
+        } 
+        .botao{
+            background-color: #E8F1F2;
+        }
+        .botao:hover{
+            background-color: #9aa0a1;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>LISTA DE PRODUTOS</h1>
+        <label for="">PRODUTO 1</label>
+        <input type="text" placeholder="NOME PRODUTO 1" id="produtoname1">
+        <input type="number" placeholder="PREÇO DO PRODUTO 1" id="produtopreco1">
+
+        <label for="">PRODUTO 2</label>
+        <input type="text" placeholder="NOME PRODUTO 2" id="produtoname2">
+        <input type="number" placeholder="PREÇO DO PRODUTO 2" id="produtopreco2">
+         
+        <label for="">PRODUTO 3</label>
+        <input type="text" placeholder="NOME PRODUTO 3" id="produtoname3">
+        <input type="number" placeholder="PREÇO DO PRODUTO 3" id="produtopreco3"> 
+
+        <input type="button" value="LIMPAR" onclick="Limpar()" class="botao">
+
+        <input type="button" value="ANALISAR PRODUTOS" onclick="Ordenar()" class="botao">
+
+        <h2 id="resposta"></h2>
+    
+    </form>
+   
+</body>
+</html>
